@@ -58,3 +58,7 @@ xcuserdata
 *.xcuserdatad
 *.xccheckout
 *.xcscmblueprint
+
+.idea/
+.vscode/
+cmake-build-debug/

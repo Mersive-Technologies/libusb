@@ -35,6 +35,10 @@ static void print_devs(libusb_device **devs)
 			return;
 		}
 
+		if( desc.idVendor == 0x046d && desc.idProduct == 0x0866 ) {
+		    printf("Found meetup!\n");
+		}
+
 		printf("%04x:%04x (bus %d, device %d)",
 			desc.idVendor, desc.idProduct,
 			libusb_get_bus_number(dev), libusb_get_device_address(dev));
