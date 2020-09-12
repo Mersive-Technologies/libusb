@@ -1,4 +1,4 @@
-add_library (usb-1.0 SHARED )
+add_library (usb-1.0 )
 
 target_sources( usb-1.0 PRIVATE
         core.c
